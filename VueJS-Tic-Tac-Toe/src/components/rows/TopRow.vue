@@ -3,7 +3,9 @@
   </header>
 
   <main>
-    <h2>Top Row</h2>
+    <div className='topRow'>
+        <h2>Top Row</h2>
+    </div>
   </main>
 </template>
 

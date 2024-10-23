@@ -3,10 +3,14 @@
   </header>
 
   <main>
-    <h1>VueJS Tic-Tac-Toe</h1>
-    <TopRow />
-    <MiddleRow />
-    <BottomRow />
+    <div className='title'>
+      <h1>VueJS Tic-Tac-Toe</h1>
+    </div>
+    <div>
+      <TopRow />
+      <MiddleRow />
+      <BottomRow />
+    </div>
   </main>
 </template>
 
