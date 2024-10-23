@@ -1,6 +1,6 @@
 <template>
     <main>
-        <div>
+        <div className='rowA1'>
             <h3>A1</h3>
         </div>
     </main>
@@ -12,4 +12,9 @@ export default {
 }
 </script>
 
-<style></style>
+<style>
+.rowA1 {
+    border-style: solid
+}
+
+</style>
