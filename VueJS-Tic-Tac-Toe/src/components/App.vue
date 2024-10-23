@@ -5,6 +5,8 @@
   <main>
     <h1>VueJS Tic-Tac-Toe</h1>
     <TopRow />
+    <MiddleRow />
+    <BottomRow />
   </main>
 </template>
 
