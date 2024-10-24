@@ -4,7 +4,12 @@
 
   <main>
     <div className='firstRow'>
-        <RowA1 v-on:changePlayer="changePlayer"/>
+        <RowA1 
+            v-on:changePlayer="changePlayer"
+            v-on:markA1="markA1"
+            :currentPlayer="this.currentPlayer"
+            :boxA1="this.boxA1"
+        />
         <RowA2 />
         <RowA3 />
     </div>
@@ -18,15 +23,31 @@ import RowA3 from './subrows/RowA3.vue'
 
 export default {
     name: 'TopRow',
+    props: {
+        currentPlayer: String
+    },
     components: {
         RowA1,
         RowA2,
         RowA3
     },
+    data() {
+        return {
+            boxA1: null
+        }
+    },
+    // created() {
+    //     this.fullRowA = {
+    //         boxA1: null
+    //     }
+    // },
     emits: ['changePlayer'],
     methods: {
         changePlayer() {
             this.$emit("changePlayer")
+        },
+        markA1() {
+            this.boxA1 = this.currentPlayer
         }
     }
 }

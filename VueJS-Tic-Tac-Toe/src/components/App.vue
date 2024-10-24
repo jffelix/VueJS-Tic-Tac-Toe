@@ -9,7 +9,10 @@
       </div>
       <div>Current Player: {{this.currentPlayer}}</div>
       <div className='allRows'>
-        <TopRow v-on:changePlayer="changePlayer"/>
+        <TopRow 
+          v-on:changePlayer="changePlayer"
+          :currentPlayer="this.currentPlayer"  
+        />
         <MiddleRow />
         <BottomRow />
       </div>
