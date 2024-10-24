@@ -36,6 +36,11 @@ export default {
   methods: {
     changePlayer() {
       console.log(this.currentPlayer)
+      if (this.currentPlayer === 'X') {
+        this.currentPlayer = '0';
+      } else {
+        this.currentPlayer = 'X'
+      }
     }
   }
 }
