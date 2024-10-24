@@ -1,14 +1,18 @@
 <template>
     <main>
-        <div className='rowA1'>
-            <h3>A1</h3>
+        <div className='rowA1' v-on:click="this.markBox">
         </div>
     </main>
 </template>
 
 <script>
 export default {
-    name: 'RowA1'
+    name: 'RowA1',
+    methods: {
+        markBox() {
+            console.log('A1')
+        }
+    }
 }
 </script>
 
