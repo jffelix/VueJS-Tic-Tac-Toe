@@ -6,7 +6,7 @@
     <div className='title'>
       <h1>VueJS Tic-Tac-Toe</h1>
     </div>
-    <div>
+    <div className='allRows'>
       <TopRow />
       <MiddleRow />
       <BottomRow />
