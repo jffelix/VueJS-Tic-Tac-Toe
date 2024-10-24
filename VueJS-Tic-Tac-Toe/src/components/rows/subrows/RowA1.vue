@@ -1,6 +1,7 @@
 <template>
     <main>
-        <div className='rowA1' v-on:click="this.markBox"></div>
+        <div className='rowA1' v-on:click="this.markBox">
+        </div>
     </main>
 </template>
 

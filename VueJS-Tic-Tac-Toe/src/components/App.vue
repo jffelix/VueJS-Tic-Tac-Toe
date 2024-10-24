@@ -7,6 +7,7 @@
       <div className='title'>
         <h1>VueJS Tic-Tac-Toe</h1>
       </div>
+      <div>Current Player: {{this.currentPlayer}}</div>
       <div className='allRows'>
         <TopRow v-on:changePlayer="changePlayer"/>
         <MiddleRow />
@@ -35,7 +36,6 @@ export default {
   },
   methods: {
     changePlayer() {
-      console.log(this.currentPlayer)
       if (this.currentPlayer === 'X') {
         this.currentPlayer = '0';
       } else {
