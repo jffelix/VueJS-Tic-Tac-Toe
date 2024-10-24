@@ -3,14 +3,21 @@
   </header>
 
   <main>
-    <h2>Bottom Row</h2>
+    <div>
+      <h2>Bottom Row</h2>
+      <RowC1 />
+    </div>
   </main>
 </template>
 
 <script>
+import RowC1 from './subrows/RowC1.vue'
 
 export default {
-    name: 'BottomRow'
+    name: 'BottomRow',
+    components: {
+      RowC1
+    }
 }
 
 </script>

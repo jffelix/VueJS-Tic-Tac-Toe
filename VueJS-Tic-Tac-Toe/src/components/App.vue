@@ -19,7 +19,6 @@ import TopRow from './rows/TopRow.vue'
 import MiddleRow from './rows/MiddleRow.vue'
 import BottomRow from './rows/BottomRow.vue'
 
-
 export default {
   name: 'App',
   components: {
