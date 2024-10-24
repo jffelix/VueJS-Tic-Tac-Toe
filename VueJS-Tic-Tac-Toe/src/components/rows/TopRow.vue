@@ -4,7 +4,7 @@
 
   <main>
     <div className='firstRow'>
-        <RowA1 />
+        <RowA1 v-on:changePlayer="changePlayer"/>
         <RowA2 />
         <RowA3 />
     </div>
@@ -22,6 +22,12 @@ export default {
         RowA1,
         RowA2,
         RowA3
+    },
+    emits: ['changePlayer'],
+    methods: {
+        changePlayer() {
+            this.$emit("changePlayer")
+        }
     }
 }
 

@@ -1,7 +1,6 @@
 <template>
     <main>
-        <div className='rowA1' v-on:click="this.markBox">
-        </div>
+        <div className='rowA1' v-on:click="this.markBox"></div>
     </main>
 </template>
 
@@ -10,9 +9,11 @@ export default {
     name: 'RowA1',
     methods: {
         markBox() {
-            console.log('A1')
+            console.log('A1');
+            this.$emit('changePlayer');
         }
-    }
+    },
+    emits: ['changePlayer']
 }
 </script>
 

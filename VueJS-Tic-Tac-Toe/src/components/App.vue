@@ -3,13 +3,15 @@
   </header>
 
   <main>
-    <div className='title'>
-      <h1>VueJS Tic-Tac-Toe</h1>
-    </div>
-    <div className='allRows'>
-      <TopRow />
-      <MiddleRow />
-      <BottomRow />
+    <div>
+      <div className='title'>
+        <h1>VueJS Tic-Tac-Toe</h1>
+      </div>
+      <div className='allRows'>
+        <TopRow v-on:changePlayer="changePlayer"/>
+        <MiddleRow />
+        <BottomRow />
+      </div>
     </div>
   </main>
 </template>
@@ -33,7 +35,7 @@ export default {
   },
   methods: {
     changePlayer() {
-      console.log("change player")
+      console.log(this.currentPlayer)
     }
   }
 }
