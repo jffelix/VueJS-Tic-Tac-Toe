@@ -4,7 +4,6 @@
 
   <main>
     <div className='thirdRow'>
-      <h2>Bottom Row</h2>
       <RowC1 />
       <RowC2 />
       <RowC3 />
@@ -29,5 +28,8 @@ export default {
 </script>
 
 <style>
-
+.thirdRow {
+    display: flex;
+    flex-direction: row;
+}
 </style>

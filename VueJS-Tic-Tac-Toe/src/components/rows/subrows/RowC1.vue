@@ -13,5 +13,7 @@ export default {
 <style>
 .rowC1 {
     border-style: solid;
+    width: 125px;
+    height: 125px;
 }
 </style>
