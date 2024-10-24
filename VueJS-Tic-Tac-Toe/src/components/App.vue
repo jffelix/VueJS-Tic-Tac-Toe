@@ -25,6 +25,16 @@ export default {
     TopRow,
     MiddleRow,
     BottomRow
+  },
+  data() {
+    return {
+      currentPlayer: 'X'
+    }
+  },
+  methods: {
+    changePlayer() {
+      console.log("change player")
+    }
   }
 }
 </script>
