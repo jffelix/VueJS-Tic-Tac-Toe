@@ -14,6 +14,8 @@ export default {
 
 <style>
 .rowB3 {
-    border-style: solid
+    border-style: solid;
+    width: 125px;
+    height: 125px;
 }
 </style>

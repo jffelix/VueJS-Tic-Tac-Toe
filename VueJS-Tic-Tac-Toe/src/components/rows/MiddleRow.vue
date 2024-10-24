@@ -4,7 +4,6 @@
 
   <main>
     <div className='secondRow'>
-      <h2>Middle Row</h2>
       <RowB1 />
       <RowB2 />
       <RowB3 />
@@ -29,4 +28,8 @@ export default {
 </script>
 
 <style>
+.secondRow {
+    display: flex;
+    flex-direction: row;
+}
 </style>
