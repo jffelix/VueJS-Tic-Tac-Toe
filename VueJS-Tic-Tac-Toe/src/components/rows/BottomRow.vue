@@ -3,7 +3,7 @@
   </header>
 
   <main>
-    <div>
+    <div className='thirdRow'>
       <h2>Bottom Row</h2>
       <RowC1 />
       <RowC2 />
