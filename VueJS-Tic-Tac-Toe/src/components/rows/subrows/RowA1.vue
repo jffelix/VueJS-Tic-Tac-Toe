@@ -15,7 +15,7 @@ export default {
 <style>
 .rowA1 {
     border-style: solid;
-    width: 20%;
+    width: 125px;
     height: 125px;
 }
 

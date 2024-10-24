@@ -4,7 +4,6 @@
 
   <main>
     <div className='firstRow'>
-        <h2>Top Row</h2>
         <RowA1 />
         <RowA2 />
         <RowA3 />
@@ -29,5 +28,8 @@ export default {
 </script>
 
 <style>
-
+.firstRow {
+    display: flex;
+    flex-direction: row;
+}
 </style>
