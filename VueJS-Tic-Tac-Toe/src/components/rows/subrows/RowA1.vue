@@ -2,7 +2,9 @@
     <main>
         <div 
             className='rowA1' 
-            v-on:click="this.markBoxA1">{{this.boxA1}}</div>
+            v-on:click="this.markBoxA1">
+            <h3>{{this.boxA1}}</h3>
+        </div>
     </main>
 </template>
 

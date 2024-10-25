@@ -10,7 +10,12 @@
             :currentPlayer="this.currentPlayer"
             :boxA1="this.boxA1"
         />
-        <RowA2 />
+        <RowA2
+            v-on:changePlayer="changePlayer" 
+            v-on:markA2="markA2"
+            :currentPlayer="this.currentPlayer"
+            :boxA2="this.boxA2"
+        />
         <RowA3 />
     </div>
   </main>
@@ -33,14 +38,10 @@ export default {
     },
     data() {
         return {
-            boxA1: null
+            boxA1: null,
+            boxA2: null
         }
     },
-    // created() {
-    //     this.fullRowA = {
-    //         boxA1: null
-    //     }
-    // },
     emits: ['changePlayer'],
     methods: {
         changePlayer() {
@@ -48,6 +49,9 @@ export default {
         },
         markA1() {
             this.boxA1 = this.currentPlayer
+        },
+        markA2() {
+            this.boxA2 = this.currentPlayer
         }
     }
 }

@@ -1,14 +1,35 @@
 <template>
     <main>
-        <div className='rowA2'>
-            <h3>A2</h3>
+        <div 
+            className='rowA2'
+            v-on:click="this.markBoxA2">
+            <h3>{{this.boxA2}}</h3>
         </div>
     </main>
 </template>
 
 <script>
 export default {
-    name: 'RowA2'
+    name: 'RowA2',
+    data() {
+        return {
+            alreadySelectedA2: false
+        }
+    },
+    props: {
+        currentPlayer: String,
+        boxA2: String
+    },
+    emits: ["changePlayer", "markA2"],
+    methods: {
+        markBoxA2() {
+            if (this.alreadySelectedA2 === false) {
+                this.$emit("changePlayer")
+                this.$emit("markA2")
+                this.alreadySelectedA2 = !this.alreadySelectedA2
+            }
+        }
+    }
 }
 </script>
 
