@@ -14,7 +14,11 @@
         v-on:markC2="markC2"
         :rowC2="this.rowC2"
       />
-      <RowC3 />
+      <RowC3 
+        v-on:changePlayerRowC="changePlayerRowC"
+        v-on:markC3="markC3"
+        :rowC3="this.rowC3"
+      />
     </div>
   </main>
 </template>
@@ -34,7 +38,8 @@ export default {
     data() {
       return {
         rowC1: null,
-        rowC2: null
+        rowC2: null,
+        rowC3: null
       }
     },
     props: {
@@ -50,6 +55,9 @@ export default {
       },
       markC2() {
         this.rowC2 = this.currentPlayer
+      },
+      markC3() {
+        this.rowC3 = this.currentPlayer
       }
     }
 }
