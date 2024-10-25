@@ -17,7 +17,10 @@
           v-on:changePlayer="changePlayer"
           :currentPlayer="this.currentPlayer"
         />
-        <BottomRow />
+        <BottomRow 
+          v-on:changePlayer="changePlayer"
+          :currentPlayer="this.currentPlayer"
+        />
       </div>
     </div>
   </main>

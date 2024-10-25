@@ -4,7 +4,11 @@
 
   <main>
     <div className='thirdRow'>
-      <RowC1 />
+      <RowC1 
+        v-on:changePlayerRowC="changePlayerRowC"
+        v-on:markC1="markC1"
+        :rowC1="this.rowC1"
+      />
       <RowC2 />
       <RowC3 />
     </div>
@@ -22,6 +26,23 @@ export default {
       RowC1,
       RowC2,
       RowC3
+    },
+    data() {
+      return {
+        rowC1: null
+      }
+    },
+    props: {
+      currentPlayer: String
+    },
+    emits: ["changePlayer"],
+    methods: {
+      changePlayerRowC() {
+        this.$emit("changePlayer")
+      },
+      markC1() {
+        this.rowC1 = this.currentPlayer
+      }
     }
 }
 
