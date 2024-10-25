@@ -15,7 +15,11 @@
         v-on:markB2="markB2"
         :boxB2="this.boxB2"
       />
-      <RowB3 />
+      <RowB3 
+        v-on:changePlayerRowB="changePlayerRowB"
+        v-on:markB3="markB3"
+        :boxB3="this.boxB3"
+      />
     </div>
   </main>
 </template>
@@ -35,7 +39,8 @@ export default {
     data() {
       return {
         boxB1: null,
-        boxB2: null
+        boxB2: null,
+        boxB3: null
       }
     },
     props: {
@@ -51,6 +56,9 @@ export default {
       },
       markB2() {
         this.boxB2 = this.currentPlayer
+      },
+      markB3() {
+        this.boxB3 = this.currentPlayer
       }
     }
 }
