@@ -16,7 +16,12 @@
             :currentPlayer="this.currentPlayer"
             :boxA2="this.boxA2"
         />
-        <RowA3 />
+        <RowA3 
+            v-on:changePlayer="changePlayer"
+            v-on:markA3="markA3"
+            :currentPlayer="this.currentPlayer"
+            :boxA3="this.boxA3"
+        />
     </div>
   </main>
 </template>
@@ -39,7 +44,8 @@ export default {
     data() {
         return {
             boxA1: null,
-            boxA2: null
+            boxA2: null,
+            boxA3: null
         }
     },
     emits: ['changePlayer'],
@@ -52,6 +58,9 @@ export default {
         },
         markA2() {
             this.boxA2 = this.currentPlayer
+        },
+        markA3() {
+            this.boxA3 = this.currentPlayer
         }
     }
 }
