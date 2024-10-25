@@ -10,7 +10,11 @@
         :boxB1="this.boxB1"
         :currentPlayer="currentPlayer"
       />
-      <RowB2 />
+      <RowB2 
+        v-on:changePlayerRowB="changePlayerRowB"
+        v-on:markB2="markB2"
+        :boxB2="this.boxB2"
+      />
       <RowB3 />
     </div>
   </main>
@@ -30,7 +34,8 @@ export default {
     },
     data() {
       return {
-        boxB1: null
+        boxB1: null,
+        boxB2: null
       }
     },
     props: {
@@ -43,6 +48,9 @@ export default {
       },
       markB1() {
         this.boxB1 = this.currentPlayer
+      },
+      markB2() {
+        this.boxB2 = this.currentPlayer
       }
     }
 }
