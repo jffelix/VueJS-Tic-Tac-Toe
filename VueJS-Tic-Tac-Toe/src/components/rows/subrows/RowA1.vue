@@ -27,7 +27,6 @@ export default {
                 this.$emit('markA1')
                 this.wasSelected = !this.wasSelected
             }
-            console.log('A1');
         }
     },
     emits: ['changePlayer', 'markA1']
