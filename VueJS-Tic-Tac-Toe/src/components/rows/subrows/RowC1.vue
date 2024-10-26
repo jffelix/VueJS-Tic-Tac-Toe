@@ -33,8 +33,17 @@ export default {
 
 <style>
 .boxC1 {
+    display: flex;
+    justify-content: center;
     border-style: solid;
     width: 125px;
     height: 125px;
+}
+
+.boxC1 h3 {
+    /* margin: auto;
+    text-align: center; */
+    /* display: flex;
+    justify-content: center; */
 }
 </style>
