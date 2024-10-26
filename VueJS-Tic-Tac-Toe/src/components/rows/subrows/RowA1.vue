@@ -35,6 +35,10 @@ export default {
 
 <style>
 .rowA1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
     border-style: solid;
     width: 125px;
     height: 125px;
