@@ -7,7 +7,7 @@
       <RowC1 
         v-on:changePlayerRowC="changePlayerRowC"
         v-on:markC1="markC1"
-        :rowC1="this.rowC1"
+        :boxC1="this.boxC1"
       />
       <RowC2 
         v-on:changePlayerRowC="changePlayerRowC"
@@ -37,7 +37,7 @@ export default {
     },
     data() {
       return {
-        rowC1: null,
+        boxC1: null,
         rowC2: null,
         rowC3: null
       }
@@ -51,7 +51,7 @@ export default {
         this.$emit("changePlayer")
       },
       markC1() {
-        this.rowC1 = this.currentPlayer
+        this.boxC1 = this.currentPlayer
       },
       markC2() {
         this.rowC2 = this.currentPlayer

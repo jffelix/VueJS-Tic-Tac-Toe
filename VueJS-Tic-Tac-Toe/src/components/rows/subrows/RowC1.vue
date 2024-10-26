@@ -1,9 +1,9 @@
 <template>
     <main 
-        className='rowC1'
+        className='boxC1'
         v-on:click="this.markBoxC1"
     >
-        <h3>{{this.rowC1}}</h3>
+        <h3>{{this.boxC1}}</h3>
     </main>
 </template>
 
@@ -16,7 +16,7 @@ export default {
         }
     },
     props: {
-        rowC1: String
+        boxC1: String
     },
     emits: ["changePlayerRowC", "markC1"],
     methods: {
@@ -32,7 +32,7 @@ export default {
 </script>
 
 <style>
-.rowC1 {
+.boxC1 {
     border-style: solid;
     width: 125px;
     height: 125px;
